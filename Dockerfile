@@ -5,4 +5,4 @@ FROM python:3.12.0a4-bullseye
 WORKDIR /app
 
 # Run the main Python file
-CMD [ "python3", "main.py" ]
+CMD [ "sleep", "100000" ]
