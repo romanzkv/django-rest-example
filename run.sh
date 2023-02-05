@@ -12,5 +12,4 @@ docker run \
 	-p 8000:8000 \
 	--rm \
 	--init \
-	django_tutorial \
-	bash
+	django_tutorial
