@@ -10,8 +10,12 @@ def getPeople(request):
     serializer = PersonSerializer(people, many=True)
     return Response(serializer.data)
 
-
-
+@api_view(['POST'])
+def addPeople(request):
+    serializer = PersonSerializer(data = request.data, many=True)
+    if serializer.is_valid():
+        serializer.save()
+    return Response(serializer.data)
 
 
 
